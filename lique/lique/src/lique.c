@@ -75,6 +75,11 @@ const void *lique_dequeue(lique_ref queue) {
     return value;
 }
 
+unsigned int lique_length(lique_ref queue) {
+    if (!queue) return 0;
+    return queue->length;
+}
+
 void lique_destory(lique_ref queue) {
     if (!queue) return;
     for (unsigned int i=0; i<queue->length; i++) {

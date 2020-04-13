@@ -50,6 +50,8 @@ extern void lique_enqueue(lique_ref queue,const void *value);
 
 extern const void *lique_dequeue(lique_ref queue);
 
+extern unsigned int lique_length(lique_ref queue);
+
 extern void lique_destory(lique_ref queue);
 
 LIQUE_EXTERN_C_END
